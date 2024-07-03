@@ -10,7 +10,7 @@ echo "<?php\n";
 ?>
 
 use yii2tech\admin\widgets\Nav;
-use yii\bootstrap\NavBar;
+use yii\bootstrap5\NavBar;
 
 /* @var $this \yii\web\View */
 

@@ -18,7 +18,7 @@ echo "<?php\n";
 <?php endif ?>
  */
 
-use yii\bootstrap\Html;
+use yii\bootstrap5\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */

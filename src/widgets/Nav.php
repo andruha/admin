@@ -7,18 +7,18 @@
 
 namespace yii2tech\admin\widgets;
 
-use yii\bootstrap\Html;
+use yii\bootstrap5\Html;
 
 /**
- * Enhanced version of [[\yii\bootstrap\Nav]], which simplifies icon rendering.
+ * Enhanced version of [[\yii\bootstrap5\Nav]], which simplifies icon rendering.
  * This widget adds support for 'icon' key in item array, which will be used as icon short name.
  *
- * @see \yii\bootstrap\Nav
+ * @see \yii\bootstrap5\Nav
  *
  * @author Paul Klimov <klimov.paul@gmail.com>
  * @since 1.0
  */
-class Nav extends \yii\bootstrap\Nav
+class Nav extends \yii\bootstrap5\Nav
 {
     /**
      * {@inheritdoc}
@@ -46,7 +46,7 @@ class Nav extends \yii\bootstrap\Nav
                     $label = '';
                 }
                 $item['encode'] = false;
-                $label = Html::icon($item['icon']) . ' ' . $label;
+                $label = Html::tag('i', '', ['class' => "bi bi-{$item['icon']}"]) . ' ' . $label;
                 $item['label'] = $label;
             }
             if (isset($item['items'])) {

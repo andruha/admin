@@ -9,7 +9,7 @@
 echo "<?php\n";
 ?>
 
-use yii\bootstrap\Html;
+use yii\bootstrap5\Html;
 use yii2tech\admin\widgets\ButtonContextMenu;
 
 /* @var $this \yii\web\View */

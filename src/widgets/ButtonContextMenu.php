@@ -8,7 +8,7 @@
 namespace yii2tech\admin\widgets;
 
 use Yii;
-use yii\bootstrap\Html;
+use yii\bootstrap5\Html;
 use yii\base\Widget;
 
 /**

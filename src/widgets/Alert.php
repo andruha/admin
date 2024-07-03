@@ -8,7 +8,7 @@
 namespace yii2tech\admin\widgets;
 
 use Yii;
-use yii\bootstrap\Widget;
+use yii\bootstrap5\Widget;
 use yii\helpers\StringHelper;
 
 /**
@@ -34,7 +34,7 @@ use yii\helpers\StringHelper;
  * Yii::$app->session->setFlash('errorSave', 'This is the error message');
  * ```
  *
- * @see \yii\bootstrap\Alert
+ * @see \yii\bootstrap5\Alert
  *
  * @author Kartik Visweswaran <kartikv2@gmail.com>
  * @author Alexander Makarov <sam@rmcreative.ru>
@@ -84,7 +84,7 @@ class Alert extends Widget
                         /* assign unique id to each alert box */
                         $this->options['id'] = $this->getId() . '-' . $type . '-' . $i;
 
-                        $alerts[] = \yii\bootstrap\Alert::widget([
+                        $alerts[] = \yii\bootstrap5\Alert::widget([
                             'body' => $message,
                             'closeButton' => $this->closeButton,
                             'options' => $this->options,

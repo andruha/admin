@@ -9,14 +9,14 @@ namespace yii2tech\admin\widgets;
 
 use Yii;
 use yii\base\Widget;
-use yii\bootstrap\Alert;
+use yii\bootstrap5\Alert;
 use yii\helpers\Html;
 use yii\helpers\Inflector;
 
 /**
  * ActionAlert renders an action proposition to the web user based on particular condition, usually a session flag.
  * Each alert consists of text message and a link to the related action.
- * Each alert is rendered using [[\yii\bootstrap\Alert]] widget.
+ * Each alert is rendered using [[\yii\bootstrap5\Alert]] widget.
  *
  * Note: in order to make alert link (button) appear at the right side, you should add following style to your CSS:
  *
@@ -27,7 +27,7 @@ use yii\helpers\Inflector;
  * }
  * ```
  *
- * @see \yii\bootstrap\Alert
+ * @see \yii\bootstrap5\Alert
  *
  * @author Paul Klimov <klimov.paul@gmail.com>
  * @since 1.0.1

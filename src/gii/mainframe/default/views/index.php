@@ -9,7 +9,7 @@
 echo "<?php\n";
 ?>
 
-use yii\bootstrap\Html;
+use yii\bootstrap5\Html;
 
 /* @var $this yii\web\View */
 
@@ -45,7 +45,7 @@ $blocks = [
         <div class="col-lg-4">
             <h3><?= "<?= " ?> $block['title'] ?></h3>
             <p><?= "<?= " ?> $block['description'] ?></p>
-            <p><?= "<?= " ?> Html::a(Html::icon($block['icon']) . ' ' . $block['label'], $block['url'], ['class' => 'btn btn-default']) ?></p>
+            <p><?= "<?= " ?> Html::a(Html::tag('i', '', ['class' => "bi bi-{$block['icon']}"]) . ' ' . $block['label'], $block['url'], ['class' => 'btn btn-default']) ?></p>
         </div>
 <?= "<?php " ?> endforeach; ?>
 

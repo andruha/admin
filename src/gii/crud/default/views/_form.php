@@ -20,8 +20,8 @@ echo "<?php\n";
 <?php endif ?>
  */
 
-use yii\bootstrap\Html;
-use yii\bootstrap\ActiveForm;
+use yii\bootstrap5\Html;
+use yii\bootstrap5\ActiveForm;
 
 /* @var $this yii\web\View */
 /* @var $model <?= ltrim($generator->modelClass, '\\') ?> */

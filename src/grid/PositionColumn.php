@@ -9,7 +9,7 @@ namespace yii2tech\admin\grid;
 
 use Yii;
 use yii\base\InvalidConfigException;
-use yii\bootstrap\Html;
+use yii\bootstrap5\Html;
 use yii\grid\DataColumn;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Url;
@@ -214,7 +214,7 @@ class PositionColumn extends DataColumn
         // icon :
         if (isset($button['icon'])) {
             $icon = $button['icon'];
-            $label = Html::icon($icon) . (empty($label) ? '' : ' ' . $label);
+            $label = Html::tag('i', '', ['class' => "bi bi-$icon"]) . (empty($label) ? '' : ' ' . $label);
         }
 
         $options = array_merge(ArrayHelper::getValue($button, 'options', []), $this->buttonOptions);

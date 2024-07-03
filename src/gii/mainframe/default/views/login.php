@@ -10,11 +10,11 @@ echo "<?php\n";
 ?>
 
 /* @var $this yii\web\View */
-/* @var $form yii\bootstrap\ActiveForm */
+/* @var $form yii\bootstrap5\ActiveForm */
 /* @var $model <?= $generator->loginModelClass ?> */
 
-use yii\bootstrap\Html;
-use yii\bootstrap\ActiveForm;
+use yii\bootstrap5\Html;
+use yii\bootstrap5\ActiveForm;
 
 $this->title = <?= $generator->generateString('Login') ?>;
 $this->params['breadcrumbs'][] = $this->title;

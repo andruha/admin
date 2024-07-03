@@ -8,7 +8,7 @@
 namespace yii2tech\admin\grid;
 
 use yii\base\InvalidConfigException;
-use yii\bootstrap\Html;
+use yii\bootstrap5\Html;
 use yii\grid\DataColumn;
 
 /**

@@ -23,7 +23,7 @@ class Nav extends \yii\bootstrap5\Nav
     /**
      * {@inheritdoc}
      */
-    public function renderItem($item)
+    public function renderItem($item): string
     {
         return parent::renderItem($this->normalizeItem($item));
     }

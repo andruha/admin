@@ -45,7 +45,7 @@ class ActionColumn extends \yii\grid\ActionColumn
         $this->buttons = ArrayHelper::merge(
             [
                 'view' => [
-                    'icon' => 'eye-open',
+                    'icon' => 'eye-fill',
                     'options' => [
                         'title' => Yii::t('yii', 'View'),
                         'aria-label' => Yii::t('yii', 'View'),
@@ -53,7 +53,7 @@ class ActionColumn extends \yii\grid\ActionColumn
                     ],
                 ],
                 'update' => [
-                    'icon' => 'pencil',
+                    'icon' => 'pencil-fill',
                     'options' => [
                         'title' => Yii::t('yii', 'Update'),
                         'aria-label' => Yii::t('yii', 'Update'),
@@ -61,7 +61,7 @@ class ActionColumn extends \yii\grid\ActionColumn
                     ],
                 ],
                 'delete' => [
-                    'icon' => 'trash',
+                    'icon' => 'trash-fill',
                     'visible' => function ($model) {
                         /* @var $model \yii\db\BaseActiveRecord */
                         if (is_object($model) && $model->canGetProperty('isDeleted')) {
@@ -78,7 +78,7 @@ class ActionColumn extends \yii\grid\ActionColumn
                     ],
                 ],
                 'restore' => [
-                    'icon' => 'repeat',
+                    'icon' => 'arrow-repeat',
                     'visible' => function ($model) {
                         /* @var $model \yii\db\BaseActiveRecord */
                         if (is_object($model) && $model->canGetProperty('isDeleted')) {

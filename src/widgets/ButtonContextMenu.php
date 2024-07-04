@@ -93,7 +93,7 @@ class ButtonContextMenu extends Widget
             $icon = $this->detectIcon($url);
         }
         if ($icon) {
-            $label = Html::icon($icon) . ' ' . $label;
+            $label = Html::tag('i', '', ['class' => "bi bi-$icon"]) . ' ' . $label;
         }
 
         // CSS class :
